@@ -1,0 +1,11 @@
+version: '3'
+
+services: 
+    webapi:
+        build: 
+            context: .
+            dockerfile: Dockerfile
+        image: dockerapi
+        hostname: 'bellaciao'
+        ports:
+            - "5000:5000"
